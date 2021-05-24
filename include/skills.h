@@ -8,7 +8,7 @@ class skills{
 private:
     string name;                // skill name
     int bonus;                  // skill bonus
-    int proficience;            // skill proeficience
+    int proeficience;            // skill proeficience
     string scoreDepend;         // ability score that influences that skill
 public:
     skills(){
@@ -19,31 +19,31 @@ public:
     }
 
     void set_name(string name){
-        name = name;
+        skills::name = name;
     }
     string get_name(){
-        return name;
+        return skills::name;
     }
 
     void set_bonus(int bonus){
-        bonus = bonus;
+        skills::bonus = bonus;
     }
     int get_bonus(){
-        return bonus;
+        return skills::bonus;
     }
 
     void set_proficience(int proeficience){
-        proeficience = proeficience;
+        skills::proeficience = proeficience;
     }
     int get_proeficience(){
-        return proficience;
+        return skills::proeficience;
     }
 
     void set_scoreDepend(string scoreDepend){
-        scoreDepend = scoreDepend;
+        skills::scoreDepend = scoreDepend;
     }
     string get_scoreDepend(){
-        return scoreDepend;
+        return skills::scoreDepend;
     }
 
 };

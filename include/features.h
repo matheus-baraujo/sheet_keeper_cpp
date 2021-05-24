@@ -12,47 +12,47 @@ private:
     int numberUses;
 public:
     features(string name, string type, string description, int levelUnlock, int numberUses){
-        name = name;
-        type = type;
-        description = description;
-        levelUnlock = levelUnlock;
-        numberUses = numberUses;
+        features::name = name;
+        features::type = type;
+        features::description = description;
+        features::levelUnlock = levelUnlock;
+        features::numberUses = numberUses;
     }
     ~features(){}
 
     void set_name(string name){
-        name = name;
+        features::name = name;
     }
     string get_name(){
-        return name;
+        return features::name;
     }
 
     void set_type(string type){
-        type = type;
+        features::type = type;
     }
     string get_type(){
-        return type;
+        return features::type;
     }
 
     void set_description(string description){
-        description = description;
+        features::description = description;
     }
     string get_description(){
-        return description;
+        return features::description;
     }
 
     void set_unlock(int levelUnlock){
-        levelUnlock = levelUnlock;
+        features::levelUnlock = levelUnlock;
     }
     int get_unlock(){
-        return levelUnlock;
+        return features::levelUnlock;
     }
 
     void set_uses(int uses){
-        numberUses = uses;
+        features::numberUses = uses;
     }
     int get_uses(){
-        return numberUses;
+        return features::numberUses;
     }
 
 };

@@ -18,12 +18,11 @@ int main(int argc, char *argv[])
 	int unlockLevel = 1;
 	int numberUses = 3;
 	
-	features Obj (nameTest, typeTest, description, unlockLevel, numberUses);
+	features feat (nameTest, typeTest, description, unlockLevel, numberUses);
 	
-	cout << Obj.get_name() << " ";
-	cout << Obj.get_type() << " ";
-	cout << Obj.get_description() << " ";
-	cout << Obj.get_unlock() << " ";
-	cout << Obj.get_uses() << " ";
-
+	cout << feat.get_name() << endl;
+	cout << feat.get_type() << endl;
+	cout << feat.get_description() << endl;
+	cout << feat.get_unlock() << endl;
+	cout << feat.get_uses() << endl;
 }
