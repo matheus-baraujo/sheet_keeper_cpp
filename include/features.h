@@ -11,7 +11,13 @@ private:
     int levelUnlock;
     int numberUses;
 public:
-    features(/* args */){}
+    features(string name, string type, string description, int levelUnlock, int numberUses){
+        name = name;
+        type = type;
+        description = description;
+        levelUnlock = levelUnlock;
+        numberUses = numberUses;
+    }
     ~features(){}
 
     void set_name(string name){
