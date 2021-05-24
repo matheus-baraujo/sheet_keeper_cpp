@@ -12,6 +12,7 @@ private:
     string nome, race;                                                        // characters name, race name
     vector<string> classes;                                                   // character classes
     vector<int> classLevels;                                                  // level of character classes
+    int hp;
     int pb;                                                                   // proeficience bonus
     int scores[6];                                                            // ability scores
     vector<features> racefeatures, classfeatures, subclassfeatures, features; // features
@@ -21,20 +22,27 @@ private:
 
 
 public:
-    character(string nome, vector<string> classe, vector<int> classLevels, string race, int scores[], int ac, int skills[]){
-        nome = nome;
-        
+    character(string nome, vector<string> classes, vector<int> classLevels, string race, int scores[6], vector<skills> skills){
+        character::nome = nome;
+        character::classes = classes;
+        character::classLevels = classLevels;
+        character::hp = 0;
+        character::race = race;
+        character::scores[6] = scores[6];
+        character::skillList = skills;
     }
 
     ~character(){}
     
 
     void set_nome(string nome){
-        nome = nome;
+        character::nome = nome;
     }
     string get_nome(){
-        return nome;
+        return character::nome;
     }  
+
+
 
 
 };

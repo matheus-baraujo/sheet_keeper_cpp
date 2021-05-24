@@ -10,58 +10,65 @@ private:
     int level;
 
 public:
-    spells(){
+    spells(string name, int level, string castingTime, string duration, string components, string description, string school){
+        spells::name = name;
+        spells::level = level;
+        spells::castingTime = castingTime;
+        spells::duration = duration;
+        spells::components = components;
+        spells::description = description;
+        spells::school = school;
     }
     ~spells(){
     }
 
     void set_name (string name){
-        name = name;
+        spells::name = name;
     }
     string get_name (){
-        return name;
+        return spells::name;
     }
 
     void set_castingTime (string castingTime){
-        castingTime = castingTime;
+        spells::castingTime = castingTime;
     }
     string get_castingTime(){
-        return castingTime;
+        return spells::castingTime;
     }
 
     void set_duration(string duration){
-        duration = duration;
+        spells::duration = duration;
     }
     string get_duration(){
-        return duration;
+        return spells::duration;
     }
 
     void set_components(string components){
-        components = components;
+        spells::components = components;
     }
     string get_components(){
-        return components;
+        return spells::components;
     }
 
     void set_description(string description){
-        description = description;
+        spells::description = description;
     }
     string get_description(){
-        return description;
+        return spells::description;
     }
 
     void set_school(string school){
-        school = school;
+        spells::school = school;
     }
     string get_school(){
-        return school;
+        return spells::school;
     }
 
     void set_level(int level){
-        level = level;
+        spells::level = level;
     }
     int get_level(){
-        return level;
+        return spells::level;
     }
 
 };
