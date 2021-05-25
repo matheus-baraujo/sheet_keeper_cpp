@@ -12,6 +12,8 @@
 
 int main(int argc, char *argv[])
 {
+
+	/*
 	string nameTest = "Fey teleportation";
 	string typeTest = "Racial feature";
 	string description = "asjdanjskldajkf";
@@ -25,4 +27,17 @@ int main(int argc, char *argv[])
 	cout << feat.get_description() << endl;
 	cout << feat.get_unlock() << endl;
 	cout << feat.get_uses() << endl;
+	
+
+	vector<vector<int>> skillList = {{1,2,34,5,6},{7,8,9}};
+	skillList[0][0] = 35;
+	skillList.push_back({1,1});
+
+	cout << skillList[0][0] << endl;
+	cout << skillList[2][0] << " " << skillList[2][1] << endl;	
+	*/
+
+	character obj1();
+	
+
 }
