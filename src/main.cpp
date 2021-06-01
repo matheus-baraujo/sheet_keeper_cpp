@@ -38,6 +38,11 @@ int main(int argc, char *argv[])
 	*/
 
 	character obj1();
-	
+
+	vector<int> teste = obj1.get_skillList();
+	for (size_t i = 0; i < teste.size(); i++)
+	{
+		cout << teste[i] << endl;
+	}
 
 }
